@@ -1,8 +1,9 @@
 ---
-import Contactform from "@components/contactform.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
+import Link from "@components/ui/link.astro";
+
 import { Icon } from "astro-icon";
 ---
 
@@ -10,34 +11,63 @@ import { Icon } from "astro-icon";
   <Container>
     <Sectionhead>
       <Fragment slot="title">Contact</Fragment>
-      <Fragment slot="desc">We are a here to help.</Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
-        <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
+        <h2 class="font-medium text-2xl text-gray-800">Contact the Team</h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? We are here to help. Fill up the form or send
-          email or call phone.
+          Contact us with any questions or feedback!
         </p>
-        <div class="mt-5">
-          <div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>1734 Sanfransico, CA 93063</span>
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
+        <div class="flex items-center mt-2 space-x-2 text-gray-600">  
+            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a 
               href="mailto:hello@astroshipstarter.com"
-              >hello@astroshipstarter.com</a
+              >koehmste@oregonstate.edu</a
             >
-          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
-            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a
-            >
-          </div>
+            <p class="ml-2">(Emma Koehmstedt)</p>
         </div>
+        <div class="flex items-center mt-2 space-x-2 text-gray-600">  
+          <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a 
+            href="mailto:hello@astroshipstarter.com"
+            >berlineg@oregonstate.edu</a
+          >
+          <p class="ml-2">(Garrett Berliner)</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2 text-gray-600">  
+          <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a 
+            href="mailto:hello@astroshipstarter.com"
+            >hendrige@oregonstate.edu</a
+          >
+          <p class="ml-2">(Gerald Hendrix)</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2 text-gray-600">  
+          <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a 
+            href="mailto:hello@astroshipstarter.com"
+            >kwonk@oregonstate.edu</a
+          >
+          <p class="ml-2">(Kyu Sung Kwon)</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2 text-gray-600">  
+          <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a 
+            href="mailto:hello@astroshipstarter.com"
+            >stephean@oregonstate.edu</a
+          >
+          <p class="ml-2">(Mitch Stephenson)</p>
+        </div>     
       </div>
       <div>
-        <Contactform />
+        <h2 class="font-medium text-2xl text-gray-800">Feedback</h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+          Fill out the form below to provide feedback on the application.
+        </p>
+        <Link
+          href="#"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSctPd5tOE8P-Wb8RyLPROSVjp4xPvCyOGkjWO8r_6iMLCB8QA/viewform"
+          target="_blank"
+          class="flex gap-1 items-center justify-center mt-5 mb-20"
+          rel="noopener">
+          Feedback Form
+        </Link>
       </div>
     </div>
   </Container>
